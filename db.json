@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Product B update",
+      "price": 300,
+      "img": "https://picsum.photos/200/200"
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "price": 400,
+      "img": "https://picsum.photos/200/200"
+    }
+  ]
+}

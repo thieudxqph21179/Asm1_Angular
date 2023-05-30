@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th>Stt</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Img</th>
+                <th><a routerLink="add">Thêm</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products;index as i" >
+                <td>{{i+1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td><img [src]="product.img" alt=""></td>
+                <td><button (click)="removeItem(product.id)">Xóa</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

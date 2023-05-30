@@ -1,0 +1,20 @@
+<div class="container">
+    <form (ngSubmit)="onHandleSubmit()" [formGroup]="productForm">
+        <div class="mb-3">
+            Tên :
+            <input class="form-control" type="text" formControlName="name">
+    
+        </div>
+        <div class="mb-3">
+            Giá :
+        <input class="form-control" type="number" formControlName="price">
+            
+        </div>
+        <div class="mb-3">
+            Link ảnh:
+        <input class="form-control" type="text" formControlName="img">
+            
+        </div>
+        <button type="submit" [disabled]="!productForm.valid">Thêm</button>
+    </form>
+</div>
